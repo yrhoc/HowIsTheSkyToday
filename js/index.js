@@ -29,32 +29,32 @@ function setIcon() {
   console.log(weather);
   switch (weather) {
     case "Thunderstorm":
-      weatherIcon = "ion-ios-thunderstorm-outline";
+      weatherIcon = "ion-ios-thunderstorm";
       break;
     case "Drizzle":
     case "Rain":
-      weatherIcon = "ion-ios-rainy-outline";
+      weatherIcon = "ion-ios-rainy";
       break;
     case "Snow":
       weatherIcon = "ion-ios-snowy";
       break;
     case "Atmosphere":
-      weatherIcon = "ion-ios-partlysunny-outline";
+      weatherIcon = "ion-ios-partlysunny";
       break;
     case "Clear":
       weatherIcon = "ion-ios-sunny";
       break;
     case "Clouds":
-      weatherIcon = "ion-ios-cloudy-outline";
+      weatherIcon = "ion-ios-cloudy";
       break;
     case "Extreme":
       weatherIcon = "ion-ios-thunderstorm";
       break;
     case "Additional":
-      weatherIcon = "ion-ios-cloudy-night-outline";
+      weatherIcon = "ion-ios-cloudy-night";
       break;
     default: 
-      weatherIcon = "ion-ios-moon-outline";
+      weatherIcon = "ion-ios-moon";
       break;
   }
   

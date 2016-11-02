@@ -1,9 +1,18 @@
+body {
+  background-color: #e6f2ff;  
+}
+
+.container-fluid {
+  border-width: 2px;
+  border-radius: 1%;
+  margin: 50px;
+  padding: 15px;
+  background-color: white; 
+}
+
 a.unit {
   color:black;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-  margin-right: 10px;  
+  margin: 10px;
 }
 
 a.unit.active {
@@ -14,15 +23,13 @@ a.unit:not(.active) { cursor: pointer; cursor: hand; }
 
 a.active {
     display: inline; 
-    line-height: 60px;
     padding: 4px 6px 4px 4px;
 
     -moz-border-radius: 30px;
     border-radius: 30px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
-
+    border-color: #006fe6;
     color: black;
     text-align: center;
 }
@@ -31,19 +38,31 @@ a.active {
   font-size:300%;
 }
 
-.icon {
-  font-size:600%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    margin:-30px 0 0 -30px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+#neighborhood, #date, #weather,
+#city, #wind, #humidity {
+  margin: 5px 10px ;
+  color: grey;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#city {
+  font-size:150%;
+}
+
+.icon {
+  font-size:400%;
+}
+
+.ion-ios-cloudy, 
+.ion-ios-thunderstorm,
+.ion-ios-rainy, 
+.ion-ios-snowy {
+  color: lightblue;
+}
+
+.ion-ios-sunny, .ion-ios-partlysunny {
+  color: yellow;  
+} 
+
+.ion-ios-thunderstorm, .ion-ios-cloudy-night, .ion-ios-moon {
+  color: gray;
+}
